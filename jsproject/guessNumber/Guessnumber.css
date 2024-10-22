@@ -1,0 +1,25 @@
+body{
+    text-align: center;
+}
+.box{
+    width: 323px;
+    height: 288px;
+    position: fixed;
+    inset: 0;
+    margin:auto;
+    border-radius: 2px;
+    border:2px solid rgb(243, 224, 105);
+}
+.inputnumber{
+    margin: 10px 1px;
+    width: 118px;
+}
+.start-game:disabled{
+    border:2px solid rgb(225, 248, 98);
+    background-color: rgb(225, 248, 98);
+    cursor: not-allowed;
+}
+.submit1{
+    border:2px solid rgb(225, 248, 98);
+    background-color: rgb(225, 248, 98); 
+}

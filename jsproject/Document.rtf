@@ -1,0 +1,133 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}}
+{\colortbl ;\red255\green0\blue0;}
+{\*\generator Riched20 10.0.22621}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\b\f0\fs22\lang9 what is node js ?\b0\par
+Node.js is an open-source JS runtime  that allows you to execute JavaScript code on the server side. It\rquote s built on Chrome's V8 JavaScript engine.\par
+\b ## V8 engine?\b0\par
+The V8 engine is an open-source JavaScript engine developed by Google. It is used to execute JavaScript code in various environments, most notably in the Google Chrome web browser.\par
+Mozilla has their own JS engine - **SpiderMonkey**\par
+Safari - **JavaScriptCore**\par
+\b What is HTTP?\b0\par
+The Hypertext Transfer Protocol (HTTP) is the foundation of the World Wide Web, and is used to load webpages using hypertext links. HTTP is an application layer protocol designed to transfer information between networked devices and runs on top of other layers of the network protocol stack. A typical flow over HTTP involves a client machine making a request to a server, which then sends a response message.\par
+\par
+\b What is in an HTTP request?\par
+\b0 An HTTP request is the way Internet communications platforms such as web browsers ask for the information they need to load a website.\par
+Each HTTP request made across the Internet carries with it a series of encoded data that carries different types of information. A typical HTTP request contains:\par
+HTTP version type\par
+a URL\par
+an HTTP method\par
+HTTP request headers\par
+Optional HTTP body.\par
+# Headers\par
+HTTP headers are key-value pairs sent between a `client` (like a web browser) and a `server` in an HTTP request or response. They convey metadata about the request or response, such as content type, auth information etc.\par
+**Common headers**\par
+1. Authorization (Sends the user auth information)\par
+2. Content-Type - Type of information client is sending (json, binary etc)\par
+3. Referer - Which URL is this request coming from\par
+\b What is an HTTP method?\par
+\b0 An HTTP method, sometimes referred to as an HTTP verb, indicates the action that the HTTP request expects from the queried server. For example, two of the most common HTTP methods are \lquote GET\rquote  and \lquote POST\rquote ; a \lquote GET\rquote  request expects information back in return (usually in the form of a website), while a \lquote POST\rquote  request typically indicates that the client is submitting information to the web server (such as form information, e.g. a submitted username and password).\par
+\b What are HTTP request headers?\par
+\b0 HTTP Header contain text information which is stored in key value pair and they are included in every HTTP request and response .these Header communicate core info .such as what browser the client is using and what data is being requested.\par
+\b What is in an HTTP request body?\par
+\b0  contains the \lquote body\rquote  of information the request is transferring. The body of an HTTP request contains any information being submitted to the web server, such as a username and password, or any other data entered into a form.\par
+\b What is in an HTTP response?\par
+\b0 An HTTP response is what web clients (often browsers) receive from an Internet server in answer to an HTTP request. These responses communicate valuable information based on what was asked for in the HTTP request.\par
+A typical HTTP response contains:\par
+an HTTP status code\par
+HTTP response headers\par
+optional HTTP body\par
+\b What\rquote s an HTTP status code?\par
+\b0 HTTP status codes are 3-digit codes most often used to indicate whether an HTTP request has been successfully completed.\par
+\lquote 2\rquote  indicate a success.\par
+\lquote 4\rquote  or a \lquote 5\rquote  that means there was an error and the webpage will not be displayed.\par
+\lquote 4\rquote  indicates a client-side error (it is very common to encounter a \lquote 404 NOT FOUND\rquote  status code when making a typo in a URL).\par
+ \lquote 5\rquote  means something went wrong on the server side.\par
+\b Response Header\b0\par
+Much like an HTTP request, an HTTP response comes with headers that convey important information such as the language and format of the data being sent in the response body.\par
+\b What is in an HTTP response body?\b0\par
+Successful HTTP responses to \lquote GET\rquote  requests generally have a body which contains the requested information. In most web requests, this is HTML data that a web browser will translate into a webpage.\par
+\par
+\b What is a protocol?\par
+\b0 In networking, a protocol is a set of rules for formatting and processing data.\par
+\b What is the Internet Protocol (IP)?\par
+\b0 The Internet Protocol (IP) is a protocol, or set of rules, for routing and addressing packets of data so that they can travel across networks and arrive at the correct destination. Data traversing the Internet is divided into smaller pieces, called packets. IP information is attached to each packet, and this information helps routers to send packets to the right place. Every device or domain that connects to the Internet is assigned an IP address\par
+\b What is an IP address? How does IP addressing work?\par
+\b0 An IP address is a unique identifier assigned to a device or domain that connects to the Internet. Each IP address is a series of characters, such as '192.168.1.1'.\par
+ DNS resolvers, which translate human-readable domain names into IP addresses, users are able to access websites without memorizing this complex series of characters. \par
+IP can be used with several transport protocols, including TCP and UDP.\par
+\b What are IP & TCP?\b0\par
+ IP does not handle packet ordering or error checking. Such functionality requires another protocol, often the Transmission Control Protocol (TCP).\par
+\b IP is a connectionless protocol, which means that each unit of data is individually addressed and routed from the source device to the target device, and the target does not send an acknowledgement back to the source. \par
+TCP maintain a connection between the sender and the target and to ensure packet order.\par
+What is the User Datagram Protocol (UDP/IP)?\par
+\b0 The User Datagram Protocol, It speeds up communications by not formally establishing a connection before data is transferred. This allows data to be transferred very quickly, but it can also cause packets to become lost in transit.\par
+ it sends packets (units of data transmission) directly to a target computer, without establishing a connection first, indicating the order of said packets, or checking whether they arrived as intended. (UDP packets are referred to as \lquote datagrams\rquote .)\par
+\par
+\cf1\b UDP is faster but less reliable than TCP, another common transport protocol. \par
+\cf0\b0 What is prots ?\par
+A port is a virtual point where network connections start and end.Ports are software-based and managed by a computer's operating system. Each port is associated with a specific process or service. Ports allow computers to easily differentiate between different kinds of traffic: emails go to a different port than webpages,There are 65,535 possible port numbers, although not all are in common use\par
+\par
+\b FETCH API\par
+There are 2 high level ways a browser can send requests to an HTTP server:\par
+1. **From the browser URL (Default GET request):**\par
+    - \b0 When you type a URL into the browser\rquote s address bar and press Enter, the browser sends an HTTP GET request to the server. This request is used to retrieve resources like HTML pages, images, or other content.\b\par
+2. **From an HTML form or JavaScript (Various request types):**\par
+    - **HTML Forms\b0 :** When a user submits a form on a webpage, the browser sends an HTTP request based on the form\rquote s `method` attribute, which can be `GET` or `POST`. Forms with `method="POST"` typically send data to the server for processing (e.g., form submissions).\par
+    - **\b JavaScript (Fetch API):** \b0 JavaScript running in the browser can make HTTP requests to a server using APIs the `fetch` API. These requests can be of various types (`GET`, `POST`, `PUT`, `DELETE`, etc.) and are commonly used for asynchronous data retrieval and manipulation (e.g., AJAX requests\b ).\par
+MiddleWares\par
+\b0 In Express.js, middleware refers to functions that have access to the request object (req), response object (res), and the next function in the application's request-response cycle. \par
+Middleware functions can perform a variety of tasks, such as \par
+1. Modifying the request or response objects.\par
+2. Ending the request-response cycle.\par
+3. Calling the next middleware function in the stack.\par
+syntax:\par
+\b app.use();\par
+example:\b0\par
+app.use(function(req, res, next) \{\par
+    console.log("request received");\par
+    next();\par
+\})\par
+\b An Express application can use the following types of middleware:\b0\par
+Application-level middleware \par
+Router-level middleware **imp\par
+Error-handling middleware\par
+Built-in middleware\par
+Third-party middleware\par
+\b Router-level middleware **imp\par
+\b0 Route-specific middleware in Express.js refers to middleware functions that are applied only to specific routes or route groups, rather than being used globally across the entire application\par
+\par
+\b THERE ARE SOME IN-BUILT MIDDLEWARES:\par
+1.express.json():\par
+\b0 used to parse incoming request bodies that are formatted as JSON. This middleware is essential for handling JSON payloads sent by clients in POST or PUT requests.\par
+
+\pard\ri-164\sa200\sl276\slmult1\tx8804 or \par
+\cf1\b This is a built-in middleware function in Express. It parses incoming requests with JSON payloads and is based on body-parser.\cf0\par
+2.express.raw([options])\par
+\b0 This is a built-in middleware function in Express. It parses incoming request payloads into a Buffer and is based on body-parser.\par
+\b 3.express.Router([options])\par
+\cf1 var router = express.Router([options])\par
+\lang16393 PROPERTIES\par
+\cf0 app.mountpath\par
+\b0 The app.mountpath property contains one or more path patterns on which a sub-app was mounted.\par
+\cf1 var express = require('express')\par
+var app = express() // the main app\par
+var admin = express() // the sub app\par
+admin.get('/', function (req, res) \{\par
+  console.log(admin.mountpath) // /admin\par
+  res.send('Admin Homepage')\par
+\})\par
+app.use('/admin', admin) // mount the sub app\par
+\cf0 ****\par
+if we use the post endpoint without express.json middleware its give rthe error ;and give the value undefined.\par
+\par
+\b CORS -CROSS ORIGIN RESOURCE SHARING\par
+\b0 Cross-Origin Resource Sharing (CORS) is a security feature implemented by web browsers that controls how resources on a web server can be requested from another domain. It's a crucial mechanism for managing cross-origin requests and ensuring secure interactions between different origins on the web.\cf1\b\lang9\par
+\par
+\b0\par
+
+\pard\sa200\sl276\slmult1\cf0\par
+\par
+\b\par
+\b0\par
+}
+ 

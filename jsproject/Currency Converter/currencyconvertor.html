@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="currencyconvertor.css"/>
+    <script src="currencyconvertor.js"defer></script>
+    <title>Curren Cyconvertor</title>
+</head>
+<body>
+    <div class="container">
+        <h3>Currency Convertor</h3>
+        <div class="currency-container">
+            <select id="first-currency-select">
+                <option value="USD" selected>USD</option>
+                <option value="JPY">JPY</option>
+                <option value="INR">INR</option>
+                <option value="CAD">CAD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+                <option value="AUD">AUD</option>
+            </select>
+            <input type="number" id="worth-currency1" value="1" min="0"/>
+        </div>
+        <div class="currency-container">
+            <select  id="second-currency-select">
+                <option value="USD" >USD</option>
+                <option value="JPY">JPY</option>
+                <option value="INR" selected>INR</option>
+                <option value="CAD">CAD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+                <option value="AUD">AUD</option>
+            </select>
+            <input type="number" id="worth-currency2" disabled/>
+        </div>
+<p class="exchange-rate"></p>
+    </div>
+   
+</body>
+</html>

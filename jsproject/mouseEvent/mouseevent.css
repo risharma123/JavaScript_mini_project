@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+    height: 100vh;
+    background-color: darkblue;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family: cursive;
+    color:white;
+}
+.container{
+   display: flex;
+   text-align: center;
+   position: relative;
+}
+#h3{
+    position: absolute;
+    left: 5%;
+    top: -12%;
+}
+#h3-i{
+    position: absolute;
+    right: 8%;
+    top: -12%;
+}
+.mouseevent{
+  
+    border: solid 1px lightgray;
+    margin: 40px;
+    min-width: 180px;
+    min-height: 100px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex; 
+    font-size: 30px;
+}
