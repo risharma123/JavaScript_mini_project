@@ -1,0 +1,112 @@
+.dice-box{
+  display: flex;
+ margin: 0 auto;
+  align-items: center;
+  max-width:1180px;
+  height:100vh;
+  gap:8px;
+
+}
+.font{
+  font-size: 36px;
+  white-space: nowrap;
+  
+}
+.btn{
+  height: 44px;
+  width: 220px;
+  border-radius: 5px;
+  background-color: black;
+  color:white;
+  border: none;
+  font-size: 23px;
+}
+.score-text{
+  margin-top:-20px;
+  white-space:nowrap;
+}
+.score{
+  margin-top:-7px;
+}
+.score-box{
+  padding-left: 57px;
+}
+
+.selectedNumber{
+  width: 30px;
+    height: 30px;
+    border: 2px solid black;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    cursor:pointer;
+}
+.selected-box{
+  display:flex;
+  gap:8px;
+}
+.GamePlay{
+  display:flex;
+  gap:594px;
+}
+.para{
+  float:right;
+  font-size: 18px;
+  font-weight: 700;
+}
+.hoverNumber{
+  width: 30px;
+  height: 30px;
+  border: 2px solid black;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  background-color: black;
+  color:white;
+  cursor :pointer;
+
+}
+
+.img{
+  width:127px;
+}
+.dice-btn{
+  display:flex;
+
+    flex-direction: column;
+    gap: 10px;
+    width: 145px;
+}
+.btn-reset{
+  height: 27px;
+  cursor: pointer;
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: white;
+    color: black;
+    font-weight: 600;
+}
+.btn-game{
+  height: 27px;
+  cursor: pointer;
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+}
+.rules-box{
+  width:520px;
+  background-color: #FBF1F1;
+  padding: 20px;
+  margin-top: 20px;
+}
+.error{
+  color:red;
+}
+.dice-detail{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
